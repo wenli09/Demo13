@@ -1,0 +1,23 @@
+public class Solution{
+  public List<List<Integer>> zigzagLevelOrder(TreeNode root){
+    List<List<Integer>> result = new LinkedList<List<Integer>>();
+  if (root == null) return result;
+  Queue<TreeNode> queue = new LinkedList<TreeNode>();
+  queue.offer(root);
+  int Level = 0;
+  while(!queue.isEmpty()) {
+    List<Integer>sofar = new LinkedList<TreeNode>();
+  int size = queue.size();
+  for (int i = 0;i < size; i ++){
+    TreeNode current = queue.poll();
+    sofar.add(current.val);
+    if(current. Left ! = null) queue.offer(current.left);
+    if (current.right ! = null) queue offer(current. right);
+}
+    if(level % n ! = 0) Collections., reverse()sofar;  
+    result.add(so far);
+    level ++;
+  } 
+    return result;
+  }
+}
