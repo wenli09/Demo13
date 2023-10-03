@@ -9,11 +9,14 @@ public class Solution{
     List<Integer>sofar = new LinkedList<TreeNode>();
   int size = queue.size();
   for (int i = 0;i < size; i ++){
-    TreeNode current = queue.poll();
+      if(level % 3 == 0){
+      }
+    TreeNode current = queue.pollFirst();
     sofar.add(current.val);
-    if(current. Left ! = null) queue.offer(current.left);
-    if (current.right ! = null) queue offer(current. right);
+    if(current. Left ! = null) queue.offerFist(current.left);
+    if (current.right ! = null) queue offerLast(current. right);
 }
+  
     if(level % n ! = 0) Collections., reverse()sofar;  
     result.add(so far);
     level ++;
